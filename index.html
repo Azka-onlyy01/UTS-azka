@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator</title>
+</head>
+<body>
+    <div class="container">
+    <h1>kalkulator belanja toko</h1>
+    <p>hitung total belanja dan dapatkan diskon sesuai jumlah belanja</p>
+    <label for="nama">nama pembeli:</label>
+    <input type="text" id="nama" placeholder="contoh: Azka">
+    <label for="harga">harga satuan (Rp):</label>
+    <input type="number" id="harga" placeholder="contoh 15000">
+    <label for="jumlah">jumlah barang:</label>
+    <input type="number" id="jumlah" placeholder="contoh 5">
+    <label for="status"> status pembeli</label>
+    <select id="status">
+        <option value="biasa">biasa</option>
+        <option value="member">member</option>
+    </select>
+    <button onclick="hitungbelanja()">Hitung</button>
+    <p id="hasil" class="hasil"></p>
+    <h2>Aturan diskon</h2>
+    <table>
+        <tr>
+            <th>subtotal belanja</th>
+            <th>diskon</th>
+        </tr>
+        <tr>
+            <td>kurang dari Rp50.000</td>
+            <td>0%</td>
+        </tr>
+        <tr>
+            <td>Rp50.000 sampai Rp99.999</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>Rp100.000 ke atas</td>
+            <td>10%</td>
+        </tr>
+    </table>
+    <p>member mendapat diskon 5%.</p>
+    <h2>simulasi harga (tanpa diskon)</h2>
+    <p id="simulasi"></p>
+    </div>
+
+</body>
+</html>
